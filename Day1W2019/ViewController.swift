@@ -39,8 +39,17 @@ class ViewController: UIViewController {
         outputResult.text = "Sub: \(c)"
     }
     @IBAction func multiplyNumber(_ sender: Any) {
+        let a = Int(Number1.text!)
+        let b = Int(Number2.text!)
+        let c = a! * b!
+        outputResult.text = "Mul: \(c)"
     }
+    
     @IBAction func divideNumber(_ sender: Any) {
+        let a = Int(Number1.text!)
+        let b = Int(Number2.text!)
+        let c = a! / b!
+        outputResult.text = "Div: \(c)"
     }
 }
 
